@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
+import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
 import "./Navbar.scss";
-import circle from "../../assets/circle.svg";
-
 import { images } from "../../constants";
-const Navbar = () => {
+
+const Navbar = ({ theme, toggleTheme }) => {
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -21,7 +21,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-
+      <ThemeSwitcher theme={theme} toggleTheme={toggleTheme} />
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
 
