@@ -1,0 +1,49 @@
+.app.dark {
+  --primary-color: #0d1117;
+  --secondary-color: #00a8ff;
+  --black-color: #ffffff;
+  --lightGray-color: #161b22;
+  --gray-color: #c9d1d9;
+  --brown-color: #8b949e;
+  --white-color: #010409;
+
+  .app__navbar {
+    background: rgba(13, 17, 23, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid #30363d;
+  }
+
+  .app__navbar-logo img {
+    filter: invert(1);
+  }
+
+  .app__navbar-links a {
+    color: var(--gray-color);
+    &:hover {
+      color: var(--secondary-color);
+    }
+  }
+
+  .app__navbar-menu {
+    svg {
+      color: var(--white-color);
+    }
+
+    div {
+      background-color: var(--primary-color);
+      box-shadow: 0 0 20px rgba(0, 168, 255, 0.1);
+
+      svg {
+        color: var(--secondary-color);
+      }
+    }
+  }
+
+  .theme-switcher {
+    color: var(--secondary-color);
+    &:hover {
+      color: var(--white-color);
+    }
+  }
+}
