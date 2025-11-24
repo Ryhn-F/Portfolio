@@ -1,4 +1,4 @@
-import { About, Footer, Header, Skills, Testimonials, Work } from "./container";
+import { About, Achievements, Footer, Header, Skills, Testimonials, Work } from "./container";
 import { Navbar } from "./components";
 
 import "./App.scss";
@@ -13,8 +13,10 @@ function App() {
       <Skills />
       <Testimonials />
       <Footer />
+      <Achievements />
+      
     </div>
   );
-}
+} 
 
 export default App;
