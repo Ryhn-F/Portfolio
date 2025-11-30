@@ -1,12 +1,12 @@
 node_modules
  .env
+ .env.local
+ .env.development.local
+ .env.test.local
+ .env.production.local
   .DS_Store
   .gitignore
   .git
   .idea
   .vscode
   .history
-  .env.local
-  .env.development.local
-  .env.test.local
-  .env.production.local
